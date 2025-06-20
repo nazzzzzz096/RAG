@@ -5,5 +5,5 @@ from app.rag_chat import get_answer
 ingest_documents("C:\week31\project\data\case.pdf", "vectorstore/legal_index")
 
 # Step 2: Ask
-response = get_answer("who is the prime minister of india", "C:\week31\project\flan-t5-base")
+response = get_answer("who is the prime minister of india","vectorstore/legal_index", "C:\week31\project\flan-t5-base")
 print("Response:", response)
